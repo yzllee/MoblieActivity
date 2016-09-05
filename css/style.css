@@ -642,3 +642,25 @@ html, body {
     bottom: 2%;
     left: 30%;
 }
+/*竖屏提示*/
+.landscape_notice{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    display: none;
+}
+.noticetxt{
+    position: relative;
+    top: 50%;
+    color:#fff;
+}
+@media (orientation: landscape) {
+    .landscape_notice{
+        display: block;
+    }
+}
